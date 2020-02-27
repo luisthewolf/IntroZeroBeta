@@ -1,0 +1,109 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../image/favicon.ico">
+
+    <title>Contacto</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="../css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <script src="../js/ie-emulation-modes-warning.js"></script>
+
+    <link href="../css/carousel.css" rel="stylesheet">
+    <script src="../js/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+       $("#Formulario").submit(function( event ){
+		event.preventDefault();
+
+		$.ajax({
+			type: 'POST',
+			url: '../php/contacto2.php',
+			data: $(this).serialize(),
+			success: function(data){
+				$("#respuesta").slideDown();
+				$("#respuesta").html(data);
+                $('#respuesta2').modal('show');
+                document.getElementById('Formulario').reset();
+			}
+		});
+
+		return false;
+	});
+});
+    </script>
+  </head>
+<body>
+
+    <section id="hero">
+        <div class="container">
+          <div class="content-center topmargin-lg">
+              <a href="index.html" class="btn btn-light topmargin-sm"> Inicio <ion-icon name="caret-forward-circle-outline-dropright-circle"></ion-icon><ion-icon name="caret-forward-circle-outline"></ion-icon></a>
+          </div>
+      </section>
+
+<section>
+    <div class="container">
+        <div class="container">
+            <h4><center>Hellcat Cars</center></h4>
+            <div class="container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d7889.40621095499!2d-70.23299216136742!3d8.624475075086659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d8.626995899999999!2d-70.2301559!5e0!3m2!1ses-419!2sve!4v1456756695234" style="border:0" allowfullscreen="" frameborder="0" height="250" width="100%"></iframe>
+            </div>
+            <strong>Contactenos</strong><br><strong>Numero De Oficinas:</strong> 8711521077
+            <hr>
+        </div>
+        <div class="container">
+            <form role="form" id="Formulario" action="../php/contacto2.php" method="POST">
+                <div class="form-group">
+                    <label class="control-label" for="Introduzca Su Nombre:">Nombre Completo:</label>
+                    <input type="text" class="form-control" id="Nombre" name="Nombre" placeholder="Introduzca Su Nombre" required autofocus />
+                </div>            
+                <div class="form-group">
+                    <label class="control-label" for="Motivo">Motivo de Contacto:</label>
+                    <select name="Motivo" class="form-control">
+                        <option value="Cotizacion De Vehiculos">Cotizacion De Vehiculos</option>
+                        <option value="Realizar Pedido">Realizar Pedido</option>
+                        <option value="Realizar Prueba De Manejo">Realizar Prueba De Manejo</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Introduzca Su Correo Electronico">Dirección De Correo Electrónico:</label>
+                    <input type="email" class="form-control" id="Correo" name="Correo" placeholder="Introduzca Su Correo Electrónico" required />
+                </div>
+                <div class="form-group">
+                    <label class="control-label" for="Introduzca Su Mensaje">Mensaje:</label>
+                    <textarea rows="5" cols="30" class="form-control" id="Mensaje" name="Mensaje" placeholder="Introduzca su mensaje" required ></textarea>
+                </div>
+                <div class="form-group">                
+                    <input type="submit" class="btn btn-primary" value="Enviar">
+                    <input type="reset" class="btn btn-default" value="Limpiar">                
+                </div>
+                <div id="respuesta" style="display: none;"></div>
+            </form>
+        </div>       
+    </div>
+</section>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../js/jquery.min.js"><\/script>')</script>
+    <script src="../js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

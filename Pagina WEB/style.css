@@ -1,0 +1,79 @@
+body {
+    font-family: 'Titillium Web', ;
+}
+
+h1 { font-size: 60px; font-weight: 600; line-height: 80px; }
+
+p {
+    font-size: 18px;
+    color: #999999;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.topmargin-xs { margin-top: 15px; }
+.topmargin-sm { margin-top: 30px; }
+.topmargin-lg { margin-top: 60px; }
+
+.btn {
+    font-size: 14px;
+    padding: 15px 26px;
+    min-width: 160px;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #ffffff;
+}
+
+.btn i { font-size: 14px; margin-left: 5px; }
+
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+    min-height: 100px;
+}
+
+.nav-link {color: #000000; }
+.nav-link:hover {color: #000000;}
+
+.logo-brand {
+    min-width: 160px;
+    max-width: 180px;
+}
+
+.navbar-toggler { font-size: 40px; }
+.navbar-toggler:focus { outline: none; }
+
+#hero {
+    background-image: url("images/hero.jpg");
+    background-size: cover;
+    padding-top: 90px;
+    min-height: 700px;
+    color: #ffffff;
+}
+
+#hero p {
+    color: #ffffff;
+}
+
+.content-center {
+    max-width: 800px;
+    margin:  0 auto 60px auto;
+    text-align: center;
+}
+
+@media (max-width: 575.98px) { 
+    h1 { font-size: 40px; line-height: normal; }
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { ... }
+
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+@media (min-width: 1200px) { ... }
