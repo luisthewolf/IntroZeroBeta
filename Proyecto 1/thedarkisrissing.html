@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        
+    </head>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+   
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    
+    
+    <link href="css/starrr.css" rel=stylesheet/>
+    <script src="js/starrr.js"></script>
+    
+    
+<body>
+    <div class="container-fluid">
+        <br/>
+    <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <img class="thumbnail" src="img/thedarkisrissing.jpg" />
+            </div>
+        <div class="col-md-6" style="margin-left: 17px;">
+             <h2>The Dark Is Rising (1973)</h2>
+            <span class="original"><strong>Autor:</strong> Susan Cooper</span>
+            <br/>
+       Géneros: Literatura Fantástica<br/>
+   
+            </p>
+            <hr/>
+            Calificar: <span id="Estrellas"></span>
+            <hr/>
+            <p>
+                
+           <h4> SINOPSIS</h4>
+           La novela The Dark Is Rising cuenta con Will Stanton, de 11 años, que se entera de que el cumpleaños que él es un "Un Viejo" y por lo tanto destinado a ejercer los poderes de la luz en la antigua lucha contra la oscuridad. En los EE.UU. era un honor de Newbery libro (finalista de la medalla). Su adaptación de la película 2007 , titulado The Seeker en Estados Unidos y The Dark Is Rising en Gran Bretaña, hizo importantes divergencias trama y los personajes del libro.<br/><br/>
+            </p>
+        </div>
+    
+    <div class="col-md-2"></div>
+    
+    </div>
+	<script>
+   $('#Estrellas').starrr({
+       rating:3,
+       change:function(e,valor){
+           alert(valor);
+           
+       }
+       
+   });
+    
+    </script>
+</body>
+</html>

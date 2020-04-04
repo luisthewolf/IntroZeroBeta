@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        
+    </head>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+   
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+    
+    
+    <link href="css/starrr.css" rel=stylesheet/>
+    <script src="js/starrr.js"></script>
+    
+    
+<body>
+    <div class="container-fluid">
+        <br/>
+    <div class="col-md-2"></div>
+            <div class="col-md-2">
+                <img class="thumbnail" src="img/elalquimista.jpg" />
+            </div>
+        <div class="col-md-6" style="margin-left: 17px;">
+             <h2>El Alquimista (1988)</h2>
+            <span class="original"><strong>Autor:</strong> Paulo Coelho</span>
+            <br/>
+       Géneros: Novela<br/>
+   
+            </p>
+            <hr/>
+            Calificar: <span id="Estrellas"></span>
+            <hr/>
+            <p>
+                
+           <h4> SINOPSIS</h4>
+           Considerado ya un clásico de nuestros días, El Alquimista relata las aventuras de Santiago, un joven pastor andaluz que un día emprende un viaje por las arenas del desierto en busca de un tesoro. Lo que empieza como la búsqueda de bienes mundanos se convertirá en el descubrimiento del tesoro interior.
+           Evocativa y profundamente humana, esta historia es el testimonio eterno del poder transformador de nuestros sueños, de la importancia de escuchar a nuestros corazones y de descifrar el lenguaje que está más allá de las palabras. Y es que cuando una persona desea realmente algo, el Universo entero conspira para que pueda realizar su sueño.<br/><br/>
+            </p>
+        </div>
+    
+    <div class="col-md-2"></div>
+    
+    </div>
+	<script>
+   $('#Estrellas').starrr({
+       rating:3,
+       change:function(e,valor){
+           alert(valor);
+           
+       }
+       
+   });
+    
+    </script>
+</body>
+</html>
